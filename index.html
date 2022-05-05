@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
     <title>Digitalna biblioteka</title>
     <script>
         tailwind.config = {
@@ -28,57 +29,70 @@
 
 <body class="bg-auto bg-no-repeat"
     style="background-image: url(https://digitalnabiblioteka.rs/wp-content/themes/blankslate-child/assets/css/css_images/background-tiny.png); width: 100%; height: 100%;">
-    <header class="flex justify-between items-center gap-20 mx-44">
-        <div>
-            <a href="#" class="flex py-3 px-3">
-                <img src="https://digitalnabiblioteka.rs/wp-content/uploads/2020/11/logo-img-tiny.png"
-                    alt="digitalna biblioteka" class="w-16 bg-cover">
-                <h4 class="uppercase pl-4 text-lg tracking-wide">дигитална<br>библиотека</h4>
-            </a>
-        </div>
-        <div class="hidden lg:flex justify-between lg:gap-10 xl:gap-20">
-            <div class="hover:text-yellow-500">ПОЧЕТНА</div>
-            <div class="hover:text-yellow-500">О ПРОЈЕТКУ </div>
-            <div class="hover:text-yellow-500">КОЛЕКЦИЈЕ</div>
-            <div class="hover:text-yellow-500">КОНТАКТ</div>
-        </div>
-        <div class="hidden lg:block">
-            <div class="border-x border-y border-black px-4 py-1 bg-white"><input type="checkbox"><label
-                    class="pl-3 text-gray-500 text-xs tracking-wide">ПРИКАЖИ КОРИЦЕ
-                </label>
+    <header>
+        <div class="flex justify-between items-center xl:mx-44 text-sm xl:text-base lg:mx-20">
+            <div>
+                <a href="#" class="flex py-3 px-3">
+                    <img src="https://digitalnabiblioteka.rs/wp-content/uploads/2020/11/logo-img-tiny.png"
+                        alt="digitalna biblioteka" class="w-16 bg-cover">
+                    <h4 class=" flex uppercase pl-4 tracking-wide items-center">дигитална<br>библиотека</h4>
+                </a>
+            </div>
+            <div class="hidden lg:flex justify-between lg:gap-10">
+                <div class="hover:text-yellow-500">ПОЧЕТНА</div>
+                <div class="hover:text-yellow-500">О ПРОЈЕТКУ </div>
+                <div class="hover:text-yellow-500">КОЛЕКЦИЈЕ</div>
+                <div class="hover:text-yellow-500">КОНТАКТ</div>
+            </div>
+            <div class="hidden lg:block">
+                <div class="border-x border-y border-black px-4 py-1 bg-white"><input type="checkbox"><label
+                        class="pl-3 text-gray-500 text-xs tracking-wide">ПРИКАЖИ КОРИЦЕ
+                    </label>
+                </div>
+            </div>
+            <div class="hamburger lg:hidden flex flex-col gap-2">
+                <span class="w-8 h-0.5 bg-slate-600"></span>
+                <span class="w-8 h-0.5 bg-slate-600"></span>
+                <span class="w-8 h-0.5 bg-slate-600"></span>
             </div>
         </div>
-        <div class="lg:hidden flex flex-col gap-2">
-            <span class="w-8 h-0.5 bg-slate-600"></span>
-            <span class="w-8 h-0.5 bg-slate-600"></span>
-            <span class="w-8 h-0.5 bg-slate-600"></span>
-        </div>
 
+        <div>
+            <div class="bg-orange-600 w-full h-screen fixed top-0 hidden" id="closeHamburger">
+                <div class="text-2xl font-bold absolute top-5 right-10" id="clHamburger">X</div>
+                <div class="hamburgerMenu flex flex-col items-center justify-center gap-5 py-5 h-full">
+                    <div class="text-white">ПОЧЕТНА</div>
+                    <div class="text-white">О ПРОЈЕТКУ </div>
+                    <div class="text-white">КОЛЕКЦИЈЕ</div>
+                    <div class="text-white">КОНТАКТ</div>
+                </div>
+            </div>
+        </div>
     </header>
     <section id="headingSection">
-        <div class="container m-auto mt-24">
-            <div class="flex flex-row">
-                <div class="w-full">
+        <div class=" pl-8 pr-8 xl:container m-auto mt-24 lg:mt-10">
+            <div class="flex flex-col lg:flex-row gap-10">
+                <div class="w-full lg:w-1/2 ">
                     <h5 class="text-lg text-orange-500">DIGITALNA BIBLIOTEKA</h5>
                     <img src="https://digitalnabiblioteka.rs/wp-content/themes/blankslate-child/assets/css/css_images/zig-zag-tiny.png"
                         alt="" class="mt-4">
-                    <h1 class="text-4xl">KOLEKCIJA DIGITALIZOVANIH RETKIH IZDANJA</h1>
+                    <h1 class="text-5xl">KOLEKCIJA DIGITALIZOVANIH RETKIH IZDANJA</h1>
                 </div>
-                <div class="w-full">
-                    <div class="flex flex-row gap-8 ml-5">
+                <div class="w-full lg:w-1/2">
+                    <div class="flex flex-row justify-center gap-8 ml-5 max-w-full">
                         <img src="https://digitalnabiblioteka.rs/wp-content/uploads/2020/12/Od-Balkana-do-Adrije.jpg"
-                            alt="" style="width: 100px;">
+                            alt="" class="w-1/4">
                         <img src="https://digitalnabiblioteka.rs/wp-content/uploads/2020/12/Disterveg-o-ucitelju.jpg"
-                            alt="" style="width: 100px;">
+                            alt="" class="w-1/4">
                         <img src="https://digitalnabiblioteka.rs/wp-content/uploads/2020/12/Disterveg-o-ucitelju.jpg"
-                            alt="" style="width: 100px;">
+                            alt="" class="w-1/4">
                     </div>
                     <img src="https://digitalnabiblioteka.rs/wp-content/themes/blankslate-child/assets/images/wall-bookshelf-tiny.png"
-                        alt="" style="width: 400px;">
+                        alt="">
                 </div>
             </div>
             <div>
-                <p>
+                <p class="text-lg">
 
                     Дигитализација, која се у савременом друштву спроводи ради заштите и очувања културног наслеђа, у
                     многим библиотекама постала је редовна активност која се у континуитету спроводи последњих година.
@@ -92,11 +106,18 @@
             </div>
         </div>
 
-        <div
-            class="container input-search bg-orange-200 m-auto h-24 flex justify-center justify-items-center items-center mt-16">
+        <!-- <div
+            class=" input-search bg-orange-200 m-auto h-24 flex justify-center justify-items-center items-center mt-16">
             <div class="flex flex-row w-4/5">
                 <input type="text" class="w-full" placeholder="Pretrazi po naslovu ili autoru">
                 <button type="submit">PRETRAZI</button>
+            </div>
+        </div> -->
+
+        <div class="m-auto pl-8 pr-8">
+            <div class="bg-orange-400 h-24 flex justify-center items-center container ">
+                <input type="text" class="h-8">
+                <button>ПРЕТРАЖИ</button>
             </div>
         </div>
     </section>
@@ -106,7 +127,7 @@
                 alt="">
             <h2 class="text-5xl font-bold">Kategorije</h2>
 
-            <div id="allcategories" class="mt-8 flex flex-wrap gap-4 ">
+            <div id="allcategories" class="mt-8 flex flex-wrap gap-4 justify-start">
                 <a href="#">
                     <div class="flex flex-col gap-5 py-5 justify-center items-center bg-categoryBackground w-48 h-48">
                         <img src="https://digitalnabiblioteka.rs/wp-content/uploads/2020/12/knjige.png" alt="">
@@ -311,6 +332,7 @@
             <p class="text-center mt-28">© Sva prava zadrzana 2022 - Digitalna bibioteka</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
